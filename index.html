@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U's Portfolio</title>
+    <!-- 구글 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- 사용자 css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header id="main_header">
-        <h1><a href="./index.html">U's Portfolio</a></h1>
-        <nav id="gnb">
-            <ul class="depth1">
-                <li>
-                    <a href="#">about</a>
-                </li>
-                <li>
-                    <a href="#">skills</a>
-                </li>
-                <li>
-                    <a href="#">portfolio</a>
-                </li>
-                <li>
-                    <a href="#">contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div>
+            <h1><a href="./index.html">U's Portfolio</a></h1>
+            <nav id="gnb">
+                <ul class="menu">
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                    <li>
+                        <a href="#">skills</a>
+                    </li>
+                    <li>
+                        <a href="#">portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="visual">
@@ -35,6 +39,116 @@
             <br>
             늘 준비되어 있는 웹 퍼블리셔 김유나입니다.
         </p>
+        <a href="#" class="scroll_down">scroll down</a>
+    </section>
+
+    <section id="about">
+        <h2>about</h2>
+        <div class="profile">
+            <div class="profile_img">profile img</div>
+            <p class="name">김유냐 Kim Yu Na</p>
+            <p class="birth">1998. 09. 17</p>
+            <p class="address">서울 강서구</p>
+            <p class="uiux">
+                웹 표준 기반 UI/UX엔지니어링 콘텐츠 전문가 양성 과정 수료
+                <br>
+                (2020. 06 ~ 2020. 11)
+            </p>
+        </div>
+        <div class="introduce">
+            <h3>Creative Publisher</h3>
+            <p>
+                한번도 생각해보지 못했던 웹디자인 분야로 도전하게 된 계기는 매우 사소했습니다.
+                <br>
+                <br>
+                디자인을 보고 있었을 뿐인데 감동을 받았고, 
+                <br>
+                저또한 그러한 사람이 되고 싶다는 생각을 하게 된것입니다.
+                <br>
+                <br>
+                퍼블리셔로써 어떤 업무를 맡더라도 팀에 도움이 되는 존재가 되고싶습니다.
+                <br>
+                <br>
+                HTML과 CSS를 깔끔하게 다루면서 트렌드의 변화속도를 따라가는
+                <br>
+                퍼블리셔가 되는 것이 저의 목표입니다.
+                <br>
+                <br>
+                끝없이 탐구하고 창의적으로 이끄는 사람이 되겠습니다.
+                <br>
+                <br>
+                높이높이 날아 비상할 준비가 되어있는 웹 퍼블리셔 김유나 입니다.
+            </p>
+            <div class="meticulous">
+                <h4># Meticulous</h4>
+                <p>꼼꼼하고 세심하게 살펴보고</p>
+            </div>
+            <div class="patience">
+                <h4># Patience</h4>
+                <p>힘들고 어렵다고 쉽게 포기하지 않으며</p>
+            </div>
+            <div class="challenge">
+                <h4># Challenge</h4>
+                <p>끊임없이 도전하고 연구하여</p>
+            </div>
+            <div class="develop">
+                <h4># Develop</h4>
+                <p>회사와 같이 발전하고 성장하는 사람이 되겠습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>skills</h2>
+        <div class="html">
+            <img src="./images/html.png" alt="HTML5">
+            <p>HTML 5</p>
+        </div>
+        <div class="css">
+            <img src="./images/css.png" alt="CSS3">
+            <p>CSS 3</p>
+        </div>
+        <div class="js_jq">
+            <img src="./images/js_jq.png" alt="JavaScript / jQuery">
+            <p>JavaScript / jQuery</p>
+        </div>
+        <div class="ps_ai">
+            <img src="./images/ps_ai.png" alt="Photoshop / Illustration">
+            <p>Photoshop / Illustration</p>
+        </div>
+        <ul class="depth1">
+            <li>
+                <a href="#">기획 &middot; 디자인</a>
+                <ul class="depth2">
+                    <li>원활한 작업을 위한 커뮤니케이션 능력</li>
+                    <li>
+                        Xmind, 파워포인트를 사용한 
+                        <br>
+                        프로토타입, 와이어 프레임, 스토리 보드, 프로젝트 완료 보고서 작성
+                    </li>
+                    <li>포토샵, 일러스트, XD를 사용한 웹·편집 디자인</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">퍼블리싱</a>
+                <ul class="depth2">
+                    <li>UI/UX 디자인</li>
+                    <li>HTML5 DTD를 준수한 웹 표준 시멘틱 코딩</li>
+                    <li>크로스 브라우징 최적화</li>
+                    <li>CSS3 Transition 스타일링</li>
+                    <li>jQuery를 이용한 자바스크립트 프로그래밍</li>
+                    <li>부트스트랩</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>portfolio</h2>
+        <div class="portfolio_img">
+            img
+        </div>
+        
     </section>
 </body>
 </html>

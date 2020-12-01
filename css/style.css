@@ -10,58 +10,88 @@ a {
 ul {
     list-style: none;
 }
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+}
 
 /* header */
 #main_header {
-    background: #ccc;
+    background: #E39E1C;
     position: fixed;
-    position: relative;
     margin: 0 auto;
     width: 100%;
     height: 70px;
 }
-#main_header > h1 > a {
+#main_header > div {
+    position: relative;
+}
+#main_header > div > h1 > a {
     position: absolute;
-    top: 20px;
-    left: 5px;
+    left: 10px;
+    line-height: 70px;
+    color: #fff;
 }
 
 /* gnb */
 #gnb {
+    /* background: #ccc; */
     /* outline: 2px solid red; */
-    background: #acb;
-    width: 100px;
     margin: 0 auto;
-    overflow: hidden;
-    /* position: relative; */
-}
-#gnb > .depth1 {
-    position: absolute;
-    right: 0;
-}
-#gnb > .depth1 > li {
-    float: left;
-    padding-left: 100px;
     height: 70px;
+    /* overflow: hidden; */
+    position: relative;
+}
+#gnb > .menu {
+    position: absolute;
+    right: 0px;
+}
+#gnb > .menu > li {
+    float: left;
+    width: 150px;
+    text-align: center;
     line-height: 70px;
 }
-#gnb > .depth1 > li > a {
+#gnb > .menu > li > a {
     display: block;
     text-transform: uppercase;
+    color: #fff;
+}
+#gnb > .menu > li > a:hover {
+    background: #fff;
+    color: #e39e1c;
 }
 
 /* visual */
 #visual {
+    outline: 2px solid red;
     margin: 0 auto;
     width: 100%;
-    height: 900px;
-    background: #abc;
+    height: 100%;
+    background-image: url(../images/main_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
-    padding-top: 300px;
+    color: #ffe7ba;
 }
 #visual > h1 {
     font-size: 100px;
+    padding-top: 300px;
 }
 #visual > p {
     font-size: 24px;
+    padding-top: 20px;
+}
+#visual > .scroll_down {
+    display: block;
+    background-image: url(../images/scroll_down_icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    text-indent: -9999px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
 }
